@@ -1,0 +1,45 @@
+/* @import "tailwindcss";
+
+*{
+  font-family:Outfit;
+}
+
+
+@theme {
+ 
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001f;
+
+  --font-outfit: var(--font-outfit);
+  --font-ovo: var(--font-ovo);
+} */
+@import "tailwindcss";
+
+@theme {
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001f;
+
+  --font-outfit: var(--font-outfit);
+  --font-ovo: var(--font-ovo);
+  --shadow-black1: 4px 4px 0 #000;
+  --shadow-white1: 4px 4px 0 #fff;
+  /* --grid-cols-auto1: repeat(auto-fit, minmax(200px, 1fr)); (dont work) why?????? */
+
+  --background-image-contact: url(/footer-bg-color.png);
+}
+
+
+/* لتفعيل الوضع الفاتح والغامق */
+@variant dark (&:where(.dark, .dark *)); 
+
+
+
+/* الطريقة الصحيحة لتعريف الخط الافتراضي للمشروع */
+body {
+  font-family: var(--font-outfit), sans-serif;
+  @apply antialiased;
+}
+
+/* لا تستخدم الـ (*) لتعريف الخطوط لأنها تكسر كلاسات Tailwind */
