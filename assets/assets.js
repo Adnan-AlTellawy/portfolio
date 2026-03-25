@@ -1,3 +1,10 @@
+import {
+  CodeBracketIcon,
+  DevicePhoneMobileIcon,
+  CommandLineIcon,
+  RocketLaunchIcon,
+} from "@heroicons/react/24/outline";
+
 import user_image from "./user-image.jpg";
 import user_img from "./user-img.jpg";
 import code_icon from "./code-icon.png";
@@ -12,10 +19,12 @@ import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
 import postman from "./postman.jpg";
+import postman_dark from "./postman-dark.jpg";
 import github from "./github.jpg";
+import github_dark from "./github-dark.jpg";
 import right_arrow_white from "./right-arrow-white.png";
-import logo from "./logo.png";
-import logo_dark from "./logo_dark.png";
+import logo from "./logo1.jpg";
+import logo_dark from "./logo2.jpg";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import profile_img from "./profile-img.png";
@@ -39,9 +48,14 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
+import restaurant from "./public/restaurant.jpg";
+import ecommerce from "./public/ecommerce.jpg";
+import work_3 from "./public/work-3.png";
+import work_4 from "./public/work-4.png";
+
 export const assets = {
   user_image,
-  user_img ,
+  user_img,
   code_icon,
   code_icon_dark,
   edu_icon,
@@ -54,7 +68,9 @@ export const assets = {
   git,
   mongodb,
   postman,
+  postman_dark,
   github,
+  github_dark,
   right_arrow_white,
   logo,
   logo_dark,
@@ -84,52 +100,54 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "Restaurant Menu",
+    description: "Web Application",
+    bgImage: restaurant,
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "e-commerce UI",
+    description: "Frontend Interface",
+    bgImage: ecommerce,
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Prayer Times",
+    description: "API Integration",
+    bgImage: work_3,
   },
   {
     title: "UI/UX designing",
     description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    bgImage: work_4,
   },
 ];
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: <CodeBracketIcon />,
+    title: "Web Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Building high-performance web applications using React and Next.js with clean, efficient code.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: <DevicePhoneMobileIcon />,
+    title: "Responsive Design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Ensuring a seamless experience across all mobile and desktop devices.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: <CommandLineIcon />,
+    title: "API Integration",
+    description:
+      "Connecting front-end interfaces with dynamic back-end data and services.",
+    link: "",
+  },
+  {
+    icon: <RocketLaunchIcon />,
+    title: "Optimization",
+    description:
+      "Optimizing code for maximum speed, performance, and SEO rankings.",
     link: "",
   },
 ];
@@ -155,11 +173,4 @@ export const infoList = [
   },
 ];
 
-export const toolsData = [
-  assets.vscode,
-  assets.postman,
-  assets.figma,
-  assets.git,
-  assets.github,
-  
-];
+export const toolsData = ["vscode", "postman", "figma", "git", "github"];

@@ -7,7 +7,7 @@ const Footer = ({isDarkMode}) => {
   return (
     <div className='mt-20'>
       <div className='text-center'>
-        <Image src={isDarkMode?assets.logo_dark : assets.logo} alt='' className='w-36 mx-auto mb-2'/>
+        <Image src={isDarkMode?assets.logo_dark : assets.logo} alt='' className='w-36 mx-auto mb-2 rounded-full'/>
 
         <div className='w-max  flex items-center gap-2 mx-auto'>
              <Image src={isDarkMode?assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6'/>
@@ -16,11 +16,11 @@ const Footer = ({isDarkMode}) => {
       </div>
 
       <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
-        <p>© 2023 Adnan Al-Tellawy. All rights reserved.</p>
+        <p>© 2026 Adnan Al-Tellawy. All rights reserved.</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-            <li><a target="_blank" href="#">GitHub</a></li>
-            <li><a target="_blank" href="#">LinkedIn</a></li>
-            <li><a target="_blank" href="#">Twitter</a></li>
+            <li><a target="_blank" href="https://github.com/Adnan-AlTellawy">GitHub</a></li>
+            <li><a target="_blank" href="https://wa.me/963930541853">WhatsApp</a></li>
+            <li><a target="_blank" href="https://t.me/AdnanAlTellawy">Telegram</a></li>
         </ul>
       </div>
     </div>

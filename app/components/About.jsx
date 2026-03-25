@@ -100,15 +100,24 @@ const About = ({ isDarkMode }) => {
             transition={{ duration: 0.6, delay: 1.5 }}
             className="flex items-center gap-3 sm:gap-5"
           >
-            {toolsData.map((tool, index) => (
+            {toolsData.map((tool, index) => {
+                let currentSrc = tool;
+                if (tool === 'postman') {
+                    currentSrc = isDarkMode ? assets.postman_dark : assets.postman;
+                }else{
+                    currentSrc = assets[tool]
+                }
+                return(
               <motion.li
                 whileInView={{ scale: 1.1 }}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 "
                 key={index}
               >
-                <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
+                <Image src={currentSrc} alt="Tool" className="w-5 sm:w-7 rounded-full" />
               </motion.li>
-            ))}
+              )
+            })}
+            
           </motion.ul>
         </motion.div>
       </motion.div>

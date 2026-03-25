@@ -34,8 +34,9 @@ const Services = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
       >
-        asjdfkajsdfksadjfksdfjkldsfjkdfjksdfjkdsfjkdsfksdfjskdjffjaskdjf
-        sdfjkdsfjksdjfksdfjksdfjksdjfksdfjkdsfjksdlfjsdklfjsdk.
+        I specialize in building responsive, efficient, and user-centric web
+        applications. My focus is on writing clean code, optimizing performance,
+        and delivering smooth user experiences across all devices.
       </motion.p>
 
       <motion.div
@@ -47,23 +48,23 @@ const Services = () => {
       >
         {serviceData.map(({ icon, title, description, link }, index) => (
           <motion.div
-            
-            whileInView={{scale:1.05 }}
-           
+            whileInView={{ scale: 1.05 }}
             key={index}
             className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black1 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-white"
           >
-            <Image src={icon} alt="" className="w-10" />
+                <div className="w-10 h-10 text-[#d9248f]">
+                    {icon}
+                </div>
             <h3 className="text-lg my-4 text-gray-700 dark:text-white">
               {title}
             </h3>
             <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
               {description}
             </p>
-            <a href={link} className="flex items-center gap-2 text-sm mt-5">
+            {/* <a href={link} className="flex items-center gap-2 text-sm mt-5">
               Read more
               <Image src={assets.right_arrow} alt="" className="w-4" />
-            </a>
+            </a> */}
           </motion.div>
         ))}
       </motion.div>

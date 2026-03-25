@@ -34,8 +34,9 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
       >
-        Welcome to my web development portfolio! Explore a collection of
-        projects showcasing my expertise in front-end development.
+        Here is a selection of my recently developed frontend projects. These
+        examples showcase my skill in converting design mockups into fully
+        functional, responsive, and performance-optimized web applications.
       </motion.p>
 
       <motion.div
@@ -50,7 +51,7 @@ const Work = ({ isDarkMode }) => {
             whileInView={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
-            style={{ backgroundImage: `url(${project.bgImage})` }}
+            style={{ backgroundImage: `url(${project.bgImage.src||project.bgImage})` }}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
           >
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
@@ -65,8 +66,8 @@ const Work = ({ isDarkMode }) => {
           </motion.div>
         ))}
       </motion.div>
-      <motion.a
-       initial={{ opacity: 0 }}
+      {/* <motion.a
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
         href=""
@@ -80,7 +81,7 @@ const Work = ({ isDarkMode }) => {
           alt="Right arrow"
           className="w-4"
         />
-      </motion.a>
+      </motion.a> */}
     </motion.div>
   );
 };

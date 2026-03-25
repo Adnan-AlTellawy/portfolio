@@ -33,7 +33,7 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20 bg-contact bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none"
+      className="w-full px-[12%] py-10 pb-15 scroll-mt-20 bg-contact bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none"
     >
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
@@ -58,8 +58,8 @@ const Contact = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
       >
-        Id love to hear from you! If you have any questions, comments, or
-        feedback, please use the form below.
+        Have a project in mind or just want to say hi? Feel free to reach out
+        using the form below, and I&apos;ll get back to you as soon as possible!
       </motion.p>
 
       <motion.form
@@ -108,10 +108,10 @@ const Contact = () => {
         ></motion.textarea>
 
         <motion.button
-          whileHover={{ scale:1.05}}
+          whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           type="submit"
-          className="py-3 px-8 w-max flex items-center justify-between gap-2   bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:border-[0.5px] dark:hover:bg-dark-hover"
+          className="py-3 px-8 w-max flex items-center justify-between gap-2 mt-[-20px] bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:border-[0.5px] dark:hover:bg-dark-hover"
         >
           Submit now{" "}
           <Image src={assets.right_arrow_white} alt="" className="w-4" />
