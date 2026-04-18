@@ -43,15 +43,19 @@ const Work = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid my-10 gap-5 dark:text-black"
+        className="grid my-10 gap-10 dark:text-black"
         style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}
       >
         {workData.map((project, index) => (
-          <motion.div
+          <motion.a
+          href={project.link}
+          target="_blank"
             whileInView={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
-            style={{ backgroundImage: `url(${project.bgImage.src||project.bgImage})` }}
+            style={{
+              backgroundImage: `url(${project.bgImage.src || project.bgImage})`,
+            }}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
           >
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
@@ -63,7 +67,7 @@ const Work = ({ isDarkMode }) => {
                 <Image src={assets.send_icon} alt="send icon" className="w-5" />
               </div>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </motion.div>
       {/* <motion.a

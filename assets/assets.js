@@ -49,9 +49,8 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
 import restaurant from "./public/restaurant.jpg";
-import ecommerce from "./public/ecommerce.jpg";
-import work_3 from "./public/work-3.png";
-import work_4 from "./public/work-4.png";
+import ecommerce from "./public/ecommerce.png";
+import weather from "./public/weather.png";
 
 export const assets = {
   user_image,
@@ -103,21 +102,19 @@ export const workData = [
     title: "Restaurant Menu",
     description: "Web Application",
     bgImage: restaurant,
+    link: "https://restaurant-app-adnan.netlify.app/"
   },
   {
     title: "e-commerce UI",
     description: "Frontend Interface",
     bgImage: ecommerce,
+    link: "https://store-app-adnan.netlify.app/"
   },
   {
-    title: "Prayer Times",
+    title: "Weather App",
     description: "API Integration",
-    bgImage: work_3,
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: work_4,
+    bgImage: weather,
+    link: "https://adnan-weather-pro.netlify.app/"
   },
 ];
 
