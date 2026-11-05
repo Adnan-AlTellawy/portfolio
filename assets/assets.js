@@ -48,9 +48,10 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
-import restaurant from "./public/restaurant.jpg";
+import restaurant from "./public/restaurant.png";
 import ecommerce from "./public/ecommerce.png";
 import weather from "./public/weather.png";
+import resume from "./public/resume.png";
 
 export const assets = {
   user_image,
@@ -76,6 +77,7 @@ export const assets = {
   mail_icon,
   mail_icon_dark,
   profile_img,
+  resume,
   download_icon,
   hand_icon,
   header_bg_color,
@@ -111,10 +113,16 @@ export const workData = [
     link: "https://store-app-adnan.netlify.app/"
   },
   {
-    title: "Weather App",
+    title: "Weather Pro",
     description: "API Integration",
     bgImage: weather,
     link: "https://adnan-weather-pro.netlify.app/"
+  },
+    {
+    title: "Resume Builder",
+    description: "Interactive Web App",
+    bgImage: resume,
+    link: "https://adnan-resume-builder.netlify.app/"
   },
 ];
 

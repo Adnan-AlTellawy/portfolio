@@ -48,8 +48,8 @@ const Work = ({ isDarkMode }) => {
       >
         {workData.map((project, index) => (
           <motion.a
-          href={project.link}
-          target="_blank"
+            href={project.link}
+            target="_blank"
             whileInView={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
@@ -70,22 +70,6 @@ const Work = ({ isDarkMode }) => {
           </motion.a>
         ))}
       </motion.div>
-      {/* <motion.a
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.1 }}
-        href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-light-hover duration-500 dark:text-white dark:border-white dark:hover:bg-dark-hover"
-      >
-        show more{" "}
-        <Image
-          src={
-            isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
-          }
-          alt="Right arrow"
-          className="w-4"
-        />
-      </motion.a> */}
     </motion.div>
   );
 };

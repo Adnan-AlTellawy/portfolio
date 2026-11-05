@@ -13,7 +13,7 @@ const Header = () => {
         <Image
           src={assets.user_img}
           alt="undefined"
-          className="rounded-full w-32 p-2 mt-1" //add mt-1********
+          className="rounded-full w-32 p-2 mt-1" //add mt-1*
         />
       </motion.div>
       <motion.h3
@@ -66,8 +66,10 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="#/sample-resume.pdf"
-          download
+          href="/Adnan_Altellawy_CV.pdf"
+          download="Adnan_AlTellawy_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white  dark:text-black"
         >
           my resume
