@@ -122,7 +122,7 @@ export const workData = [
     title: "Resume Builder",
     description: "Interactive Web App",
     bgImage: resume,
-    link: "https://adnan-resume-builder.netlify.app/"
+    link: "https://resume-builder-24.netlify.app"
   },
 ];
 
